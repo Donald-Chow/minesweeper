@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minesweeper</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon" />
+    <link rel="stylesheet" href="minesweeper.css" />
+  </head>
+  <body>
+    <h1>Minesweeper</h1>
+    <p>Left Click = Reveal</p>
+    <p>Shift + Click = Toggle Flag</p>
+    <p id="bomb-counter">Bomb Counter: 99</p>
+    <table style="margin: auto">
+      <tbody id="minesweeper">
+        <!-- Dear Student, would you write a bunch of HTML here or generate
+           a big array of tiles, or do it via JavaScript? -->
+        <tr>
+          <td class="unopened is-mine"></td>
+          <td class="unopened"></td>
+          <td class="unopened"></td>
+        </tr>
+        <tr>
+          <td class="unopened"></td>
+          <td class="unopened is-mine"></td>
+          <td class="unopened"></td>
+        </tr>
+        <tr>
+          <td class="unopened"></td>
+          <td class="unopened"></td>
+          <td class="unopened"></td>
+        </tr>
+        <form class="form-inline">
+          <label class="my-1 mr-2" for="difficulties">Preference</label>
+          <select class="custom-select my-1 mr-sm-2" id="difficulties">
+            <option selected>Choose...</option>
+            <option value="1">Baby</option>
+            <option value="2">Easy</option>
+            <option value="3">Hard</option>
+            <option value="4">Expert</option>
+          </select>
+          <button type="submit" id="btn-new-game" class="btn btn-primary my-1">
+            Submit
+          </button>
+        </form>
+        <!-- <button id="btn-new-game">NewGame(Default expert)</button> -->
+      </tbody>
+    </table>
+
+    <!-- Including your code -->
+    <script type="text/javascript" src="./lib/minesweeper.js"></script>
+  </body>
+</html>
